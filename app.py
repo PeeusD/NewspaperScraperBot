@@ -2,8 +2,6 @@ from flask import Flask , render_template , request
 from bs4 import BeautifulSoup
 import requests
 
-
-
 app = Flask(__name__)
 def my_func(url):
         
@@ -110,4 +108,4 @@ def toi():
    
       
 if __name__=="__main__" :   
-    app.run(debug= True)             
+    app.run()  #set (debug=True)    ====>  <FOR DEBUGGING ELSE BLANK FOR IN PRODUCTION>           
